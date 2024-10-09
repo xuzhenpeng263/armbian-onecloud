@@ -8,7 +8,7 @@ on:
     paths:
       - .github/workflows/ci.yml
   schedule:
-    - cron: '0 0 * * *'  # 每天零点触发
+  - cron: '0 0 * * 0'  # 每周日零点触发
 
 env:
   SCRIPT_REPO: ${{ github.repository }}
